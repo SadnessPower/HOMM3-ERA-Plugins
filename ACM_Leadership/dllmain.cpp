@@ -25,7 +25,6 @@ namespace
     struct ArmyDescriptionContext
     {
         const h3::H3Army* army;
-        const h3::H3Hero* hero;
         BOOL alliance;
     };
     thread_local const ArmyDescriptionContext* descriptionContext = nullptr;
@@ -140,7 +139,7 @@ namespace
         const h3::H3Hero* hero, const h3::H3Town* town, const h3::H3Hero* otherHero,
         const h3::H3Army* otherArmy, int ground, BOOL alliance)
     {
-        const ArmyDescriptionContext context = { army, hero, alliance };
+        const ArmyDescriptionContext context = { army, alliance };
         struct Scope
         {
             const ArmyDescriptionContext* previous;
@@ -213,7 +212,6 @@ namespace
             if (intro)
             {
                 text = originalText;
-                bool changed = acm::RemoveLegacyAlignmentExplanation(text);
                 for (int level = 3; level <= 5; ++level)
                 {
                     const char* explanation = Explanation(level);
@@ -226,12 +224,11 @@ namespace
                             const std::string visibleExplanation = acm::WithoutFontColorMarkup(explanation);
                             minimumTextWidth = font->GetMaxLineWidth(visibleExplanation.c_str());
                         }
-                        changed = acm::MoveExplanation(text, intro, explanation) || changed;
+                        if (acm::MoveExplanation(text, intro, explanation))
+                            displayedText = text.c_str();
                         break;
                     }
                 }
-                if (changed)
-                    displayedText = text.c_str();
             }
         }
         struct PopupScope

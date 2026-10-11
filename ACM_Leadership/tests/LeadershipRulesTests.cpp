@@ -15,12 +15,11 @@ int main()
         assert(expected >= width);
         ++checks;
     }
-    assert(acm::WithoutFontColorMarkup("{~g}Grandmaster Leadership{~} decreases alignments by 3.") ==
-        "Grandmaster Leadership decreases alignments by 3.");
-    assert(acm::WithoutFontColorMarkup("{~gold}Translated title{~}\nSecond line.") ==
-        "Translated title\nSecond line.");
-    assert(acm::WithoutFontColorMarkup("Unchanged sentence.") == "Unchanged sentence.");
-    assert(acm::WithoutFontColorMarkup("Malformed {~tag") == "Malformed {~tag");
+    // Arbitrary fixtures exercise markup handling without embedding game text.
+    assert(acm::WithoutFontColorMarkup("{~g}token-A{~}: token-B") == "token-A: token-B");
+    assert(acm::WithoutFontColorMarkup("{~gold}token-C{~}\ntoken-D") == "token-C\ntoken-D");
+    assert(acm::WithoutFontColorMarkup("token-E") == "token-E");
+    assert(acm::WithoutFontColorMarkup("token-F {~tag") == "token-F {~tag");
     checks += 4;
     for (int native = 0; native <= 3; ++native)
         for (int master = 0; master <= 1; ++master)
@@ -38,54 +37,45 @@ int main()
                     ++checks;
                 }
             }
-    for (const auto& intro : {"Good morale may give your armies extra attack in combat.",
-        "Your armies have neutral morale.", "Bad morale may cause your armies to freeze in combat."})
-        for (int level = 3; level <= 5; ++level)
+    // Every row is supplied by the caller. No fixture depends on a real language,
+    // mastery label, modifier caption or wording stored in external properties.
+    for (const auto& intro : { "intro-A", "intro-B", "intro-C" })
+        for (int variant = 0; variant < 3; ++variant)
         {
-            const std::string explanation = "{~g}Leadership{~} decreases your group alignments by " +
-                std::to_string(level - 2) + ".";
-            const std::string prefix = "{Morale}\n\n" + std::string(intro);
-            const std::string modifiers = "\n\nCurrent Morale Modifiers\nLeadership +" +
-                std::to_string(level) + "\nAll troops of the same alignment +1\nUndead in group -1";
+            const std::string explanation = "{~g}token-" + std::to_string(variant) + "{~}";
+            const std::string prefix = "{title}\n\n" + std::string(intro);
+            const std::string modifiers = "\n\nblock-A\nrow-A\nrow-B\nrow-C";
             std::string text = prefix + modifiers + "\n" + explanation;
             assert(acm::MoveExplanation(text, intro, explanation));
             assert(text == prefix + "\n" + explanation + modifiers);
             assert(!acm::MoveExplanation(text, intro, explanation));
             ++checks;
 
-            // The screenshot case: our explanation is already above the modifiers,
-            // with an empty line before it and an obsolete explanation after it.
-            for (const auto& legacy : {
-                "Master Leadership makes your army group share the same alignment.",
-                "Grandmaster Leadership makes your army group share the same alignment.",
-                "{~g}Master Leadership{~} makes your army group share the same alignment.",
-                "{~g}Grandmaster Leadership{~} makes your army group share the same alignment." })
-            {
-                text = prefix + "\n\n" + explanation + "\n\n" + legacy + modifiers;
-                assert(acm::RemoveLegacyAlignmentExplanation(text));
-                assert(acm::MoveExplanation(text, intro, explanation));
-                assert(text == prefix + "\n" + explanation + modifiers);
-                assert(!acm::RemoveLegacyAlignmentExplanation(text));
-                assert(!acm::MoveExplanation(text, intro, explanation));
-                ++checks;
-            }
-
-            // Extra old whitespace before our line is removed; other native spacing stays.
+            // Empty lines before the explanation are removed; other spacing stays.
             text = prefix + "\n\n\n" + explanation + modifiers;
             assert(acm::MoveExplanation(text, intro, explanation));
             assert(text == prefix + "\n" + explanation + modifiers);
+            assert(!acm::MoveExplanation(text, intro, explanation));
             ++checks;
         }
-    std::string noMarker = "Good morale\n\nCurrent Morale Modifiers\nExpert Leadership +3";
+    std::string noMarker = "intro-X\n\nblock-X\nrow-X";
     const auto unchanged = noMarker;
-    assert(!acm::MoveExplanation(noMarker, "Good morale", "Missing explanation."));
+    assert(!acm::MoveExplanation(noMarker, "intro-X", "missing-X"));
     assert(noMarker == unchanged);
-    assert(!acm::RemoveLegacyAlignmentExplanation(noMarker));
+    ++checks;
+    assert(!acm::MoveExplanation(noMarker, "missing-Y", "row-X"));
     assert(noMarker == unchanged);
-    std::string legacyOnly = "Grandmaster Leadership makes your army group share the same alignment.";
-    assert(acm::RemoveLegacyAlignmentExplanation(legacyOnly));
-    assert(legacyOnly.empty());
-    std::string anotherExplanation = "A different feature makes your army group share the same alignment.";
-    assert(!acm::RemoveLegacyAlignmentExplanation(anotherExplanation));
-    std::cout << checks + 1 << " Leadership rule/popup cases passed\n";
+    ++checks;
+    assert(!acm::MoveExplanation(noMarker, "", "row-X"));
+    assert(noMarker == unchanged);
+    ++checks;
+    assert(!acm::MoveExplanation(noMarker, "intro-X", ""));
+    assert(noMarker == unchanged);
+    ++checks;
+    std::string reversed = "\nrow-X\nintro-X";
+    const auto reversedUnchanged = reversed;
+    assert(!acm::MoveExplanation(reversed, "intro-X", "row-X"));
+    assert(reversed == reversedUnchanged);
+    ++checks;
+    std::cout << checks << " rule/popup cases passed\n";
 }

@@ -44,37 +44,6 @@ namespace acm
         return count <= 0 ? 0 : (std::max)(1, count - AlignmentReduction(level));
     }
 
-    // Remove the obsolete standalone explanation, including its old gold-color markup.
-    // These are matching strings only; displayed Leadership text remains in ERA translations.
-    inline bool RemoveLegacyAlignmentExplanation(std::string& text)
-    {
-        bool changed = false;
-        size_t start = 0;
-        while (start < text.size())
-        {
-            const size_t newline = text.find('\n', start);
-            const size_t end = newline == std::string::npos ? text.size() : newline;
-            std::string line = WithoutFontColorMarkup(text.substr(start, end - start));
-            const size_t first = line.find_first_not_of(" \t\r");
-            if (first != std::string::npos)
-                line = line.substr(first, line.find_last_not_of(" \t\r") - first + 1);
-            if (line == "Master Leadership makes your army group share the same alignment." ||
-                line == "Grandmaster Leadership makes your army group share the same alignment.")
-            {
-                // Preserve the separator before the paragraph, removing the obsolete
-                // paragraph and its following empty lines rather than leaving an extra gap.
-                size_t after = text.find_first_not_of("\r\n", end);
-                if (after == std::string::npos)
-                    after = text.size();
-                text.erase(start, after - start);
-                changed = true;
-            }
-            else
-                start = newline == std::string::npos ? text.size() : newline + 1;
-        }
-        return changed;
-    }
-
     // Place our explanation directly below the native introduction, without an empty line.
     inline bool MoveExplanation(std::string& text, const std::string& introduction,
         const std::string& explanation)

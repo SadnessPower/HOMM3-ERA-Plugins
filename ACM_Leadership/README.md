@@ -9,8 +9,8 @@ All SDK headers and ERA implementation are local: no dependency on H3ERA_Plugins
 - Basic/Advanced/Expert/Master/Grandmaster Leadership grants native morale +1/+2/+3/+4/+5.
 - Expert/Master/Grandmaster reduces the army's effective faction count by 1/2/3, never below one for a nonempty army.
 - Native specialty scaling, artifacts, terrain rules, morale clamping and undead penalties are retained.
-- Native popup modifier rows and totals use the actual mastery. The localized explanation is placed directly below the native introduction, without an empty line, for Good/Neutral/Bad morale. The obsolete Master/Grandmaster "share the same alignment" explanation is removed from popup input, including legacy script/save output.
-- Morale popups containing that localized Leadership explanation use the game's medium font to measure the visible translated sentence, excluding color tags. This measured width replaces the former fixed 640-pixel minimum. Vanilla adds borders, rounds the size, and controls height, centering and icon placement; larger native widths are retained. Long translations wrap at vanilla's normal 578-pixel text-width limit. Unrelated dialogs are unaffected.
+- Native popup modifier rows and totals use the actual mastery. The localized explanation is placed directly below the native introduction, without an empty line, for Good/Neutral/Bad morale. Formatting uses current ERA translations and native localized strings, not hardcoded displayed sentences; unrelated text is preserved.
+- Morale popups containing that localized Leadership explanation use the game's medium font to measure the visible translated sentence, excluding color tags. Vanilla adds borders, rounds the size, and controls height, centering and icon placement; larger native widths are retained. Long translations wrap at vanilla's normal 578-pixel text-width limit. Unrelated dialogs are unaffected.
 - Master/Grandmaster's existing extra-attack damage and Luck scripts are unchanged.
 - Ten translation keys under `AC_Misc` in `advanced_classes.json` hold new explanations, modifier rows and all five Leadership descriptions. ERM skill-description callers read those keys rather than the removed ERT entries.
 
@@ -38,5 +38,5 @@ No fixed HD Mod DLL address or replacement dialog is used. Ordinary dialogs with
 
 ## Tests
 
-`tests/LeadershipRulesTests.vcxproj` runs standalone rule/text tests.
+`tests/LeadershipRulesTests.vcxproj` runs standalone rule/text tests. Synthetic text fixtures test formatting independently of any game's wording or translation.
 `/p:AcmNativeTests=true` additionally enables game-thread native-function tests on OnAfterCreateWindow if `ACM_LEADERSHIP_TEST_LOG` names an output log. Normal Release builds omit that testing code.
