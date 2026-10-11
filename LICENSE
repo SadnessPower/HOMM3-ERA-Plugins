@@ -1,0 +1,168 @@
+PROPRIETARY NON-COMMERCIAL SOURCE LICENSE
+Version 1.0 — All Rights Reserved
+
+Copyright (c) 2026 Roberto La Maestra. All rights reserved.
+Original repository: https://github.com/SadnessPower/HOMM3-ERA-Mods
+Permission requests: robertomaest2@gmail.com
+
+IMPORTANT: This is a proprietary, source-available license, not an open-source
+license. Read it before using the Software beyond the rights independently
+provided by GitHub's Terms of Service or applicable law.
+
+1. DEFINITIONS
+
+"Licensor" means the copyright holder identified above, or another person
+legally authorized to grant rights in the Software.
+
+"Software" means the original source code, files, and accompanying materials
+in the repository identified above, but only to the extent the Licensor owns
+or is authorized to license them. Third-party components remain governed by
+their respective licenses.
+
+"GitHub" means the GitHub service at github.com and its functionality.
+
+"Fork" means a copy of the repository created through GitHub's forking
+functionality. "Modified Fork" means a Fork containing changes to the Software.
+
+"Derivative Work" means a copyrightable modification or adaptation of the
+Software or a work incorporating protectable portions of the Software, to the
+extent the Licensor's permission is required by applicable law.
+
+"Commercial Use" means use intended for or connected with commercial or
+business advantage, whether direct or indirect, including selling or
+licensing copies; offering paid products, services, support, or access;
+using the Software in an organization's business operations; or using it
+for advertising, sponsorship, or other monetization.
+
+"Personal Non-Commercial Use" means an individual's own study, learning,
+experimentation, and testing, without Commercial Use or incorporation into
+another project.
+
+2. OWNERSHIP AND RIGHTS RESERVED
+
+The Licensor retains all copyright and other rights in the Software.
+Except for permissions expressly granted in this License, permissions
+independently granted under GitHub's Terms of Service, and rights that
+cannot lawfully be restricted, all rights are reserved. No ownership or
+trademark rights are transferred.
+
+3. GITHUB TERMS OF SERVICE TAKE PRECEDENCE FOR PLATFORM RIGHTS
+
+Nothing in this License restricts, conditions, or revokes rights that GitHub,
+its affiliates, or GitHub users receive directly under GitHub's applicable
+Terms of Service. In particular, public repositories may be viewed and
+forked, and content may be used, displayed, performed, and reproduced through
+GitHub to the extent permitted by its Terms of Service and functionality.
+The rights granted to GitHub and its affiliates, including rights relating
+to operation and improvement of the service, remain unaffected.
+
+The following restrictions apply only to rights granted additionally by this
+License. If a provision conflicts with a right independently granted by
+GitHub's Terms of Service, that provision does not limit that independent
+right.
+
+4. LIMITED ADDITIONAL PERMISSION
+
+Subject to Sections 5–8, the Licensor grants you a non-exclusive, worldwide,
+royalty-free, non-sublicensable permission to:
+
+(a) access, read, and study the Software;
+(b) make reasonable local copies solely for Personal Non-Commercial Use,
+    including personal backup and testing copies;
+(c) modify the Software solely for Personal Non-Commercial Use; and
+(d) publish and maintain a Modified Fork on GitHub solely as a continuation
+    of this same project for Personal Non-Commercial Use, provided you meet
+    the attribution, change-notice, and licensing conditions below.
+
+An unmodified Fork made through GitHub's functionality is permitted under
+GitHub's Terms of Service, independently of this additional permission.
+
+5. RESTRICTIONS
+
+Unless the Licensor gives prior express written permission, you may NOT:
+
+(a) sell, rent, lease, charge for, commercially license, or otherwise
+    monetize the Software, a Fork, a Modified Fork, or a Derivative Work;
+(b) engage in Commercial Use of the Software or any of those works;
+(c) incorporate, copy, link, embed, or otherwise reuse the Software or
+    protectable portions of it in a different project, product, library,
+    application, service, website, or repository, even if non-commercial;
+(d) distribute, publish, upload, mirror, or otherwise provide copies of the
+    Software or Derivative Works outside GitHub, including via third-party
+    code hosts, package registries, download sites, or file-sharing services;
+(e) offer a Derivative Work under terms that purport to remove or relax
+    this License's restrictions as they apply to the original Software; or
+(f) sublicense rights in the original Software or imply that the Licensor
+    endorses your Fork or modifications.
+
+For clarity, permitted personal local copies under Section 4(b), GitHub's
+own operation and distribution of content as authorized by its Terms of
+Service, and acts independently permitted by applicable law are not
+prohibited by Section 5(d).
+
+6. ATTRIBUTION AND NOTICE OF MODIFICATIONS
+
+If you publish a Modified Fork under Section 4(d), you must:
+
+(a) preserve this LICENSE file and all existing copyright, authorship,
+    and license notices in the original Software;
+(b) identify Roberto La Maestra as the original author or rights holder
+    and link to https://github.com/SadnessPower/HOMM3-ERA-Mods in the Fork's README;
+(c) clearly state that your repository is a modified Fork and not the
+    original project; and
+(d) document your significant changes in the README or a CHANGELOG file,
+    including a brief description and the date of each change.
+
+You may also credit your own contributions, but you may not suggest that
+you own the Licensor's original work.
+
+7. SAME LICENSE FOR PUBLISHED MODIFIED FORKS
+
+Every Modified Fork that you publish under Section 4(d) must retain this
+License in full and make any modifications that you own and are entitled
+to license available to recipients under these same terms. You retain
+ownership of your original contributions; this requirement does not assign
+their copyright to the Licensor.
+
+You may not replace this License for the original Software or grant
+recipients additional rights in the original Software. Any additional
+permission to use the original Software must come from the Licensor.
+
+8. REQUESTING EXCEPTIONS
+
+Any use not expressly permitted by this License or independently permitted
+by GitHub's Terms of Service or applicable law requires the Licensor's
+prior express written authorization. Send requests to robertomaest2@gmail.com.
+Describe the intended use, project, distribution method, and whether it is
+commercial. Permission is granted only if the Licensor affirmatively
+approves it in writing; silence does not constitute consent. Written
+exceptions may have separate terms and conditions.
+
+9. TERMINATION
+
+The additional permissions granted by this License terminate automatically
+if you breach its terms. Termination does not revoke rights independently
+provided by GitHub's Terms of Service or applicable law. The Licensor may
+pursue available legal remedies for unauthorized uses.
+
+10. NO WARRANTY; LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+"AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NONINFRINGEMENT.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR SHALL NOT
+BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE
+DAMAGES, OR LOSS OF DATA, PROFITS, OR BUSINESS, ARISING FROM THE SOFTWARE
+OR ITS USE.
+
+11. GENERAL TERMS
+
+If any provision is unenforceable, the remainder remains effective to the
+extent permitted by law. Failure to enforce a provision does not waive it.
+This License does not override third-party licenses or mandatory legal
+rights. No permission beyond those stated or independently available is
+implied.
+
+END OF LICENSE

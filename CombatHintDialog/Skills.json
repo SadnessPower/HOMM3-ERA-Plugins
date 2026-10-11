@@ -1,0 +1,941 @@
+{
+    "combatHintDialog":  {
+                             "title":  "Creature Abilities",
+                             "noSkills":  "No highlighted ability descriptions are available for this creature.",
+                             "skillIds":  "three_hex_attack|minus_50_magic_damage|minus_85_magic_damage|minus_95_magic_damage|abyssal_fury|accurate_shoot|acid_attack|acid_breath|age_attack|agony_shoot|air_affinity|air_enchantment|air_shield|all_slain_creatures_become_ghost|all_slain_enemies_became_undead|army_of_darkness|assimilation|attack_all_around|attack_with_ice_bolt|aura_of_magic_res|aura_of_magic_resistance|barbarian_rage|behemoth_rage|beholder_shoot|berserker_attack|berserker_rage|binding_attack|bless|bless_of_faith|blessed_shooter|blessing_of_the_forest|blessing_of_the_true_believer|blind_petrification_and_death_stare_immunity|blinding_attack|blinding_shoot|block_physical_damage|body_looting|breath|breath_and_binding_attack|cast_animate_dead|cast_bless|cast_clone|cast_curse|cast_expert_berserker_when_hit|cast_expert_misfortune|cast_haste|cast_meteor_shower|cast_misfortune|cast_prayer|cast_random_buff_spell|cast_random_buff_spells|cast_resurrection|chaotic_attack|charge|charge_immunity|clone|corrosive_breath|crippling_attack|crippling_shoot|cure|curse_of_the_sorceress|cursed_attack|deadly_touch|death_blow|death_cloud_shoot|death_stare|defensive_clone|defensive_formation|destroy_armor_attack|devour|diabolic_fury|disease_attack|dispel_buff_attack|double_attack|double_shoot|dragonic_fury|drain_life|drain_spell_points|earth_affinity|earth_and_fire_affinity|ethereal|executioner|expert_prayer|fear|fearless|ferocity|fighting_ritual|fire_affinity|fire_and_air_affinity|fire_power|fire_wall_attack|fireball_shoot|fleash_eater|fungal_war_potion|glory_of_the_knight|guard_break_blow|haste|hates_war_machines|hex_reaction|hex_shoot|hypnotize_attack|ice_and_steel_enchantment|ice_bolt_attack|ice_bolt_shoot|ignore_100_of_enemy_defense_skill|ignore_20_of_enemy_attack_skill|ignore_20_of_enemy_defense_skill|ignore_30_of_enemy_attack_skill|ignore_40_of_enemy_attack_skill|ignore_40_of_enemy_defense_skill|ignore_60_enemy_defense_skill|ignore_60_of_enemy_attack_skill|ignore_60_of_enemy_defense_skill|ignore_80_of_enemy_defense_skill|implosion_attack|incapacitating_shoot|infernal_fever_attack|infernal_fury|inferno_attack|invoke_elementals|jackpot|kill_frenzy|killer_instinct|level_1_hostile_spells_immunity|level_1_2_hostile_spells_immunity|level_1_2_3_hostile_spells_immunity|level_1_2_3_spells_immunity|lightning_attack|lightning_immunity|lightning_strike|magic_arrow_attack|magic_mirror|magic_of_the_fairy|magic_of_the_sprite|magic_res|magic_resistance|magical_shoot|manticore_poison_attack|mass_counterstrike|mass_fighting_ritual|mass_haste|mass_protection_from_air|mastermind_shoot|might_of_the_nature|mind_blast_shoot|mind_spells_immunity|misfortune_attack|monstrous_rage|no_distance_penalty|no_retaliation|no_walls_penalty|paralyzing_attack|paralyzing_shoot|parry|petrifying_attack|piercing_attack|poison_and_disease_immunity|poisonous_attack|poisonous_breath|poisonous_shoot|polymorph_attack|polymorphic_shoot|polymorphic_strike|powerful_hex_shoot|powerful_magical_shoot|powerful_random_offensive_spellcaster|prayer|preventive_retaliation|protection_of_the_archmage|protection_of_the_grandmaster|protection_of_the_master|pure_light_breath|raise_abyssal_archdemons|raise_dark_elementals|raise_demon_warriors|raise_demons|raise_devils|raise_efreet|raise_pit_masters_1|raise_treants|random_mass_buff_every_turn|random_mass_debuff_every_turn|random_mass_spells_every_3_turns|random_offensive_spellcaster|ranged_retaliation|recycling|repair_construct_1|rest_in_peace|resurrection|revenge|sea_hex_shoot|shattering_spree|shield|shield_block|shield_of_the_empire|slain_creatures_become_dark_elementals|slayer|slow_immunity|slow_shoot|sorceress_shoot|sorrow_attack|spell_damage_reduction|spells_affinity|spells_immunity|steal_artifact_attack|steal_money_and_artifact_attack|steal_money_attack|strike_and_return|strong_diabolic_fury|strongly_hates_angels|strongly_hates_black_dragons|strongly_hates_devils|strongly_hates_efreeti|strongly_hates_genies|strongly_hates_titans|stunning_attack|stunning_strike|summon_fire_elementals|supreme_magical_shoot|thirst_for_blood|two_retaliations|undead_nemesis|underworld_of_magic|unlimited_retaliations|wall_of_shields_formation|water_affinity|weak_drain_life|weakness_attack|wild_lightning_attack|wild_spells_attack|will_spells_immunity|world_of_magic|wrath_of_vengeance",
+                             "skills":  {
+                                            "three_hex_attack":  {
+                                                                     "name":  "3-Hex Attack",
+                                                                     "description":  "Attacks the chosen target and creatures standing on the two hexes immediately behind it."
+                                                                 },
+                                            "minus_50_magic_damage":  {
+                                                                          "name":  "-50% Magic Damage",
+                                                                          "description":  "Reduces damage received from hostile spells by 50%."
+                                                                      },
+                                            "minus_85_magic_damage":  {
+                                                                          "name":  "-85% Magic Damage",
+                                                                          "description":  "Reduces damage received from hostile spells by 85%."
+                                                                      },
+                                            "minus_95_magic_damage":  {
+                                                                          "name":  "-95% Magic Damage",
+                                                                          "description":  "Reduces damage received from hostile spells by 95%."
+                                                                      },
+                                            "abyssal_fury":  {
+                                                                 "name":  "Abyssal Fury",
+                                                                 "description":  "May enter an abyssal fury after attacking, gaining the combat bonuses defined by the ability."
+                                                             },
+                                            "accurate_shoot":  {
+                                                                   "name":  "Accurate Shoot",
+                                                                   "description":  "Its shot can strike several creatures when they stand in the projectile path."
+                                                               },
+                                            "acid_attack":  {
+                                                                "name":  "Acid Attack",
+                                                                "description":  "Its attack may cover the target in acid and weaken it."
+                                                            },
+                                            "acid_breath":  {
+                                                                "name":  "Acid Breath",
+                                                                "description":  "Its breath damages the target and may corrode creatures behind it."
+                                                            },
+                                            "age_attack":  {
+                                                               "name":  "Age Attack",
+                                                               "description":  "Its attack may age the target, greatly reducing the target stack\u0027s health."
+                                                           },
+                                            "agony_shoot":  {
+                                                                "name":  "Agony Shoot",
+                                                                "description":  "Its shot may poison the target with a painful, lingering effect."
+                                                            },
+                                            "air_affinity":  {
+                                                                 "name":  "Air Affinity",
+                                                                 "description":  "Has an affinity with Air magic and its related spells."
+                                                             },
+                                            "air_enchantment":  {
+                                                                    "name":  "Air Enchantment",
+                                                                    "description":  "May enchant itself with Air Magic during combat."
+                                                                },
+                                            "air_shield":  {
+                                                               "name":  "Air Shield",
+                                                               "description":  "May protect itself with Air Shield during combat."
+                                                           },
+                                            "all_slain_creatures_become_ghost":  {
+                                                                                     "name":  "All Slain Creatures become Ghost",
+                                                                                     "description":  "Transforms creatures slain by this stack as stated by the ability."
+                                                                                 },
+                                            "all_slain_enemies_became_undead":  {
+                                                                                    "name":  "All Slain Enemies Became Undead",
+                                                                                    "description":  "Transforms creatures slain by this stack as stated by the ability."
+                                                                                },
+                                            "army_of_darkness":  {
+                                                                     "name":  "Army of Darkness",
+                                                                     "description":  "Raises additional creatures by consuming the bodies of fallen enemies."
+                                                                 },
+                                            "assimilation":  {
+                                                                 "name":  "Assimilation",
+                                                                 "description":  "Can absorb fallen creatures to strengthen or restore its own stack."
+                                                             },
+                                            "attack_all_around":  {
+                                                                      "name":  "Attack All Around",
+                                                                      "description":  "Attacks every enemy standing on an adjacent hex."
+                                                                  },
+                                            "attack_with_ice_bolt":  {
+                                                                         "name":  "Attack with Ice Bolt",
+                                                                         "description":  "Its attack is accompanied by an Ice Bolt spell."
+                                                                     },
+                                            "aura_of_magic_res":  {
+                                                                      "name":  "Aura of Magic Res",
+                                                                      "description":  "Grants nearby allied creatures additional magic resistance."
+                                                                  },
+                                            "aura_of_magic_resistance":  {
+                                                                             "name":  "Aura of Magic Resistance",
+                                                                             "description":  "Grants nearby allied creatures additional magic resistance."
+                                                                         },
+                                            "barbarian_rage":  {
+                                                                   "name":  "Barbarian Rage",
+                                                                   "description":  "May enter a barbarian rage and gain the combat bonuses defined by the ability."
+                                                               },
+                                            "behemoth_rage":  {
+                                                                  "name":  "Behemoth Rage",
+                                                                  "description":  "May unleash a behemoth rage and gain powerful combat bonuses."
+                                                              },
+                                            "beholder_shoot":  {
+                                                                   "name":  "Beholder Shoot",
+                                                                   "description":  "Uses a magical beholder ray as its ranged attack."
+                                                               },
+                                            "berserker_attack":  {
+                                                                     "name":  "Berserker Attack",
+                                                                     "description":  "Its attack may drive the target Berserk."
+                                                                 },
+                                            "berserker_rage":  {
+                                                                   "name":  "Berserker Rage",
+                                                                   "description":  "May enter a berserker rage and gain the combat bonuses defined by the ability."
+                                                               },
+                                            "binding_attack":  {
+                                                                   "name":  "Binding Attack",
+                                                                   "description":  "Its attack may bind the target and prevent it from moving."
+                                                               },
+                                            "bless":  {
+                                                          "name":  "Bless",
+                                                          "description":  "May cast Bless during combat."
+                                                      },
+                                            "bless_of_faith":  {
+                                                                   "name":  "Bless of Faith",
+                                                                   "description":  "May receive Bless of Faith, improving its combat performance."
+                                                               },
+                                            "blessed_shooter":  {
+                                                                    "name":  "Blessed Shooter",
+                                                                    "description":  "May become a Blessed Shooter and deal improved ranged damage."
+                                                                },
+                                            "blessing_of_the_forest":  {
+                                                                           "name":  "Blessing of the Forest",
+                                                                           "description":  "Blesses allied creatures of the forest with beneficial combat effects."
+                                                                       },
+                                            "blessing_of_the_true_believer":  {
+                                                                                  "name":  "Blessing of the True Believer",
+                                                                                  "description":  "Blesses allied true believers with beneficial combat effects."
+                                                                              },
+                                            "blind_petrification_and_death_stare_immunity":  {
+                                                                                                 "name":  "Blind, Petrification and Death Stare Immunity",
+                                                                                                 "description":  "Is immune to Blind, Petrification, and Death Stare effects."
+                                                                                             },
+                                            "blinding_attack":  {
+                                                                    "name":  "Blinding Attack",
+                                                                    "description":  "Its attack may Blind the target."
+                                                                },
+                                            "blinding_shoot":  {
+                                                                   "name":  "Blinding Shoot",
+                                                                   "description":  "Its shot may Blind the target."
+                                                               },
+                                            "block_physical_damage":  {
+                                                                          "name":  "Block Physical Damage",
+                                                                          "description":  "May completely block damage from a physical attack."
+                                                                      },
+                                            "body_looting":  {
+                                                                 "name":  "Body Looting",
+                                                                 "description":  "May loot the bodies of slain enemies after combat actions."
+                                                             },
+                                            "breath":  {
+                                                           "name":  "Breath",
+                                                           "description":  "Its breath attack also strikes the creature immediately behind the target."
+                                                       },
+                                            "breath_and_binding_attack":  {
+                                                                              "name":  "Breath and Binding Attack",
+                                                                              "description":  "Its breath strikes through the target and may bind affected creatures."
+                                                                          },
+                                            "cast_animate_dead":  {
+                                                                      "name":  "Cast Animate Dead",
+                                                                      "description":  "Can cast Animate Dead during combat."
+                                                                  },
+                                            "cast_bless":  {
+                                                               "name":  "Cast Bless",
+                                                               "description":  "Can cast Bless during combat."
+                                                           },
+                                            "cast_clone":  {
+                                                               "name":  "Cast Clone",
+                                                               "description":  "Can cast Clone during combat."
+                                                           },
+                                            "cast_curse":  {
+                                                               "name":  "Cast Curse",
+                                                               "description":  "Can cast Curse during combat."
+                                                           },
+                                            "cast_expert_berserker_when_hit":  {
+                                                                                   "name":  "Cast Expert Berserker When Hit",
+                                                                                   "description":  "May cast Expert Berserk on the attacker when this stack is hit."
+                                                                               },
+                                            "cast_expert_misfortune":  {
+                                                                           "name":  "Cast Expert Misfortune",
+                                                                           "description":  "Can cast Expert Misfortune during combat."
+                                                                       },
+                                            "cast_haste":  {
+                                                               "name":  "Cast Haste",
+                                                               "description":  "Can cast Haste during combat."
+                                                           },
+                                            "cast_meteor_shower":  {
+                                                                       "name":  "Cast Meteor Shower",
+                                                                       "description":  "Can cast Meteor Shower during combat."
+                                                                   },
+                                            "cast_misfortune":  {
+                                                                    "name":  "Cast Misfortune",
+                                                                    "description":  "Can cast Misfortune during combat."
+                                                                },
+                                            "cast_prayer":  {
+                                                                "name":  "Cast Prayer",
+                                                                "description":  "Can cast Prayer during combat."
+                                                            },
+                                            "cast_random_buff_spell":  {
+                                                                           "name":  "Cast Random Buff Spell",
+                                                                           "description":  "Can cast Random Buff Spell during combat."
+                                                                       },
+                                            "cast_random_buff_spells":  {
+                                                                            "name":  "Cast Random Buff Spells",
+                                                                            "description":  "Can cast Random Buff Spells during combat."
+                                                                        },
+                                            "cast_resurrection":  {
+                                                                      "name":  "Cast Resurrection",
+                                                                      "description":  "Can cast Resurrection during combat."
+                                                                  },
+                                            "chaotic_attack":  {
+                                                                   "name":  "Chaotic Attack",
+                                                                   "description":  "Its attack may inflict one of several chaotic effects."
+                                                               },
+                                            "charge":  {
+                                                           "name":  "Charge",
+                                                           "description":  "Deals additional melee damage for every hex crossed before the attack."
+                                                       },
+                                            "charge_immunity":  {
+                                                                    "name":  "Charge Immunity",
+                                                                    "description":  "Does not suffer additional damage from enemy Charge abilities."
+                                                                },
+                                            "clone":  {
+                                                          "name":  "Clone",
+                                                          "description":  "May create a temporary Clone of its own stack."
+                                                      },
+                                            "corrosive_breath":  {
+                                                                     "name":  "Corrosive Breath",
+                                                                     "description":  "Its breath may corrode the defenses of affected creatures."
+                                                                 },
+                                            "crippling_attack":  {
+                                                                     "name":  "Crippling Attack",
+                                                                     "description":  "Its attack may reduce the target\u0027s Attack, Defense, and Speed."
+                                                                 },
+                                            "crippling_shoot":  {
+                                                                    "name":  "Crippling Shoot",
+                                                                    "description":  "Its shot may reduce the target\u0027s Attack, Defense, and Speed."
+                                                                },
+                                            "cure":  {
+                                                         "name":  "Cure",
+                                                         "description":  "May cast Cure during combat."
+                                                     },
+                                            "curse_of_the_sorceress":  {
+                                                                           "name":  "Curse of the Sorceress",
+                                                                           "description":  "May afflict enemy creatures with the Curse of the Sorceress."
+                                                                       },
+                                            "cursed_attack":  {
+                                                                  "name":  "Cursed Attack",
+                                                                  "description":  "Its attack may Curse the target."
+                                                              },
+                                            "deadly_touch":  {
+                                                                 "name":  "Deadly Touch",
+                                                                 "description":  "Its touch may instantly slay part of the target stack."
+                                                             },
+                                            "death_blow":  {
+                                                               "name":  "Death Blow",
+                                                               "description":  "Has the stated chance to deal a devastating double-damage blow."
+                                                           },
+                                            "death_cloud_shoot":  {
+                                                                      "name":  "Death Cloud Shoot",
+                                                                      "description":  "Its shot explodes in a death cloud that also damages nearby living creatures."
+                                                                  },
+                                            "death_stare":  {
+                                                                "name":  "Death Stare",
+                                                                "description":  "After attacking, may slay additional creatures with its Death Stare."
+                                                            },
+                                            "defensive_clone":  {
+                                                                    "name":  "Defensive Clone",
+                                                                    "description":  "May create a Clone when defending itself."
+                                                                },
+                                            "defensive_formation":  {
+                                                                        "name":  "Defensive Formation",
+                                                                        "description":  "Can assume a defensive formation, trading offensive strength for greater Defense."
+                                                                    },
+                                            "destroy_armor_attack":  {
+                                                                         "name":  "Destroy Armor Attack",
+                                                                         "description":  "Its attack permanently reduces the target\u0027s Defense for the battle."
+                                                                     },
+                                            "devour":  {
+                                                           "name":  "Devour",
+                                                           "description":  "May devour a fallen or weakened creature to restore its own stack."
+                                                       },
+                                            "diabolic_fury":  {
+                                                                  "name":  "Diabolic Fury",
+                                                                  "description":  "May enter a diabolic fury and gain the combat bonuses defined by the ability."
+                                                              },
+                                            "disease_attack":  {
+                                                                   "name":  "Disease Attack",
+                                                                   "description":  "Its attack may Disease the target, reducing Attack and Defense."
+                                                               },
+                                            "dispel_buff_attack":  {
+                                                                       "name":  "Dispel Buff Attack",
+                                                                       "description":  "Its attack removes beneficial spells from the target."
+                                                                   },
+                                            "double_attack":  {
+                                                                  "name":  "Double Attack",
+                                                                  "description":  "Attacks twice each time it performs a normal attack."
+                                                              },
+                                            "double_shoot":  {
+                                                                 "name":  "Double Shoot",
+                                                                 "description":  "Shoots twice each time it performs a normal ranged attack."
+                                                             },
+                                            "dragonic_fury":  {
+                                                                  "name":  "Dragonic Fury",
+                                                                  "description":  "May enter a draconic fury and gain powerful combat bonuses."
+                                                              },
+                                            "drain_life":  {
+                                                               "name":  "Drain Life",
+                                                               "description":  "Restores lost hit points according to the damage dealt to living enemies."
+                                                           },
+                                            "drain_spell_points":  {
+                                                                       "name":  "Drain Spell Points",
+                                                                       "description":  "Its attack drains spell points from the opposing hero."
+                                                                   },
+                                            "earth_affinity":  {
+                                                                   "name":  "Earth Affinity",
+                                                                   "description":  "Has an affinity with Earth magic and its related spells."
+                                                               },
+                                            "earth_and_fire_affinity":  {
+                                                                            "name":  "Earth and Fire Affinity",
+                                                                            "description":  "Has an affinity with Earth and Fire magic and its related spells."
+                                                                        },
+                                            "ethereal":  {
+                                                             "name":  "Ethereal",
+                                                             "description":  "Its immaterial form can cause physical attacks to pass harmlessly through it."
+                                                         },
+                                            "executioner":  {
+                                                                "name":  "Executioner",
+                                                                "description":  "Deals especially deadly damage to badly wounded enemy stacks."
+                                                            },
+                                            "expert_prayer":  {
+                                                                  "name":  "Expert Prayer",
+                                                                  "description":  "May cast Expert Prayer during combat."
+                                                              },
+                                            "fear":  {
+                                                         "name":  "Fear",
+                                                         "description":  "May terrify an enemy stack and cause it to lose its action."
+                                                     },
+                                            "fearless":  {
+                                                             "name":  "Fearless",
+                                                             "description":  "Is immune to Fear."
+                                                         },
+                                            "ferocity":  {
+                                                             "name":  "Ferocity",
+                                                             "description":  "Continues attacking while its blows keep killing creatures, up to the ability limit."
+                                                         },
+                                            "fighting_ritual":  {
+                                                                    "name":  "Fighting Ritual",
+                                                                    "description":  "Performs a fighting ritual that grants combat bonuses."
+                                                                },
+                                            "fire_affinity":  {
+                                                                  "name":  "Fire Affinity",
+                                                                  "description":  "Has an affinity with Fire magic and its related spells."
+                                                              },
+                                            "fire_and_air_affinity":  {
+                                                                          "name":  "Fire and Air Affinity",
+                                                                          "description":  "Has an affinity with Fire and Air magic and its related spells."
+                                                                      },
+                                            "fire_power":  {
+                                                               "name":  "Fire Power",
+                                                               "description":  "Empowers itself with Fire Magic during combat."
+                                                           },
+                                            "fire_wall_attack":  {
+                                                                     "name":  "Fire Wall Attack",
+                                                                     "description":  "Its attack may create a Fire Wall on the battlefield."
+                                                                 },
+                                            "fireball_shoot":  {
+                                                                   "name":  "Fireball Shoot",
+                                                                   "description":  "Its projectile explodes like a Fireball, damaging creatures around the target hex."
+                                                               },
+                                            "fleash_eater":  {
+                                                                 "name":  "Fleash Eater",
+                                                                 "description":  "Consumes enemy remains to restore hit points and revive creatures in its stack."
+                                                             },
+                                            "fungal_war_potion":  {
+                                                                      "name":  "Fungal War Potion",
+                                                                      "description":  "May use a fungal war potion to gain combat bonuses."
+                                                                  },
+                                            "glory_of_the_knight":  {
+                                                                        "name":  "Glory of the Knight",
+                                                                        "description":  "May receive Glory of the Knight, improving its combat abilities."
+                                                                    },
+                                            "guard_break_blow":  {
+                                                                     "name":  "Guard Break Blow",
+                                                                     "description":  "Its blow is especially effective against guarding and defensive enemies."
+                                                                 },
+                                            "haste":  {
+                                                          "name":  "Haste",
+                                                          "description":  "May cast Haste during combat."
+                                                      },
+                                            "hates_war_machines":  {
+                                                                       "name":  "Hates War Machines",
+                                                                       "description":  "Deals increased damage to war machines."
+                                                                   },
+                                            "hex_reaction":  {
+                                                                 "name":  "Hex Reaction",
+                                                                 "description":  "May immediately react when a hostile hex or curse effect is used."
+                                                             },
+                                            "hex_shoot":  {
+                                                              "name":  "Hex Shoot",
+                                                              "description":  "Its shot may inflict a hostile hex on the target."
+                                                          },
+                                            "hypnotize_attack":  {
+                                                                     "name":  "Hypnotize Attack",
+                                                                     "description":  "Its attack may place the target under Hypnotize."
+                                                                 },
+                                            "ice_and_steel_enchantment":  {
+                                                                              "name":  "Ice and Steel Enchantment",
+                                                                              "description":  "Enchants its weapons with ice and steel effects."
+                                                                          },
+                                            "ice_bolt_attack":  {
+                                                                    "name":  "Ice Bolt Attack",
+                                                                    "description":  "Its attack may strike the target with Ice Bolt."
+                                                                },
+                                            "ice_bolt_shoot":  {
+                                                                   "name":  "Ice Bolt Shoot",
+                                                                   "description":  "Its shot may strike the target with Ice Bolt."
+                                                               },
+                                            "ignore_100_of_enemy_defense_skill":  {
+                                                                                      "name":  "Ignore 100% of Enemy Defense Skill",
+                                                                                      "description":  "Ignores 100% of the enemy\u0027s Defense Skill when calculating damage."
+                                                                                  },
+                                            "ignore_20_of_enemy_attack_skill":  {
+                                                                                    "name":  "Ignore 20% of Enemy Attack Skill",
+                                                                                    "description":  "Ignores 20% of the enemy\u0027s Attack Skill when calculating damage."
+                                                                                },
+                                            "ignore_20_of_enemy_defense_skill":  {
+                                                                                     "name":  "Ignore 20% of Enemy Defense Skill",
+                                                                                     "description":  "Ignores 20% of the enemy\u0027s Defense Skill when calculating damage."
+                                                                                 },
+                                            "ignore_30_of_enemy_attack_skill":  {
+                                                                                    "name":  "Ignore 30% of Enemy Attack Skill",
+                                                                                    "description":  "Ignores 30% of the enemy\u0027s Attack Skill when calculating damage."
+                                                                                },
+                                            "ignore_40_of_enemy_attack_skill":  {
+                                                                                    "name":  "Ignore 40% of Enemy Attack Skill",
+                                                                                    "description":  "Ignores 40% of the enemy\u0027s Attack Skill when calculating damage."
+                                                                                },
+                                            "ignore_40_of_enemy_defense_skill":  {
+                                                                                     "name":  "Ignore 40% of Enemy Defense Skill",
+                                                                                     "description":  "Ignores 40% of the enemy\u0027s Defense Skill when calculating damage."
+                                                                                 },
+                                            "ignore_60_enemy_defense_skill":  {
+                                                                                  "name":  "Ignore 60% Enemy Defense Skill",
+                                                                                  "description":  "Ignores 60% of the enemy\u0027s Defense Skill when calculating damage."
+                                                                              },
+                                            "ignore_60_of_enemy_attack_skill":  {
+                                                                                    "name":  "Ignore 60% of Enemy Attack Skill",
+                                                                                    "description":  "Ignores 60% of the enemy\u0027s Attack Skill when calculating damage."
+                                                                                },
+                                            "ignore_60_of_enemy_defense_skill":  {
+                                                                                     "name":  "Ignore 60% of Enemy Defense Skill",
+                                                                                     "description":  "Ignores 60% of the enemy\u0027s Defense Skill when calculating damage."
+                                                                                 },
+                                            "ignore_80_of_enemy_defense_skill":  {
+                                                                                     "name":  "Ignore 80% of Enemy Defense Skill",
+                                                                                     "description":  "Ignores 80% of the enemy\u0027s Defense Skill when calculating damage."
+                                                                                 },
+                                            "implosion_attack":  {
+                                                                     "name":  "Implosion Attack",
+                                                                     "description":  "Its attack may trigger an Implosion on the target."
+                                                                 },
+                                            "incapacitating_shoot":  {
+                                                                         "name":  "Incapacitating Shoot",
+                                                                         "description":  "Its shot may greatly reduce the target\u0027s Attack, Defense, and Speed."
+                                                                     },
+                                            "infernal_fever_attack":  {
+                                                                          "name":  "Infernal Fever Attack",
+                                                                          "description":  "Its attack may infect the target with Infernal Fever."
+                                                                      },
+                                            "infernal_fury":  {
+                                                                  "name":  "Infernal Fury",
+                                                                  "description":  "May enter an infernal fury and gain the combat bonuses defined by the ability."
+                                                              },
+                                            "inferno_attack":  {
+                                                                   "name":  "Inferno Attack",
+                                                                   "description":  "Its attack may trigger an Inferno around the target."
+                                                               },
+                                            "invoke_elementals":  {
+                                                                      "name":  "Invoke Elementals",
+                                                                      "description":  "May call elemental creatures onto the battlefield."
+                                                                  },
+                                            "jackpot":  {
+                                                            "name":  "Jackpot",
+                                                            "description":  "May trigger a powerful random beneficial result."
+                                                        },
+                                            "kill_frenzy":  {
+                                                                "name":  "Kill Frenzy",
+                                                                "description":  "After its first eligible kill each turn, immediately gains another action."
+                                                            },
+                                            "killer_instinct":  {
+                                                                    "name":  "Killer Instinct",
+                                                                    "description":  "May awaken its killer instinct and gain offensive combat bonuses."
+                                                                },
+                                            "level_1_hostile_spells_immunity":  {
+                                                                                    "name":  "Level 1 Hostile Spells Immunity",
+                                                                                    "description":  "Is immune to hostile spells of levels 1."
+                                                                                },
+                                            "level_1_2_hostile_spells_immunity":  {
+                                                                                      "name":  "Level 1-2 Hostile Spells Immunity",
+                                                                                      "description":  "Is immune to hostile spells of levels 1-2."
+                                                                                  },
+                                            "level_1_2_3_hostile_spells_immunity":  {
+                                                                                        "name":  "Level 1-2-3 Hostile Spells Immunity",
+                                                                                        "description":  "Is immune to hostile spells of levels 1-2-3."
+                                                                                    },
+                                            "level_1_2_3_spells_immunity":  {
+                                                                                "name":  "Level 1-2-3 Spells Immunity",
+                                                                                "description":  "Is immune to spells of levels 1-2-3."
+                                                                            },
+                                            "lightning_attack":  {
+                                                                     "name":  "Lightning Attack",
+                                                                     "description":  "Its attack may strike the target with lightning."
+                                                                 },
+                                            "lightning_immunity":  {
+                                                                       "name":  "Lightning Immunity",
+                                                                       "description":  "Is immune to Lightning."
+                                                                   },
+                                            "lightning_strike":  {
+                                                                     "name":  "Lightning Strike",
+                                                                     "description":  "May call down a lightning strike on its target."
+                                                                 },
+                                            "magic_arrow_attack":  {
+                                                                       "name":  "Magic Arrow Attack",
+                                                                       "description":  "Its attack may strike the target with Magic Arrow."
+                                                                   },
+                                            "magic_mirror":  {
+                                                                 "name":  "Magic Mirror",
+                                                                 "description":  "May reflect hostile spells back at their caster."
+                                                             },
+                                            "magic_of_the_fairy":  {
+                                                                       "name":  "Magic of the Fairy",
+                                                                       "description":  "Uses fairy magic to cast beneficial or hostile spells."
+                                                                   },
+                                            "magic_of_the_sprite":  {
+                                                                        "name":  "Magic of the Sprite",
+                                                                        "description":  "Uses sprite magic to cast beneficial or hostile spells."
+                                                                    },
+                                            "magic_res":  {
+                                                              "name":  "Magic Res",
+                                                              "description":  "Has a chance to resist hostile spells completely."
+                                                          },
+                                            "magic_resistance":  {
+                                                                     "name":  "Magic Resistance",
+                                                                     "description":  "Has a chance to resist hostile spells completely."
+                                                                 },
+                                            "magical_shoot":  {
+                                                                  "name":  "Magical Shoot",
+                                                                  "description":  "Its ranged attack may cast a random offensive spell on the target."
+                                                              },
+                                            "manticore_poison_attack":  {
+                                                                            "name":  "Manticore Poison Attack",
+                                                                            "description":  "Its attack may poison the target with manticore venom."
+                                                                        },
+                                            "mass_counterstrike":  {
+                                                                       "name":  "Mass Counterstrike",
+                                                                       "description":  "May cast Mass Counterstrike on allied creatures."
+                                                                   },
+                                            "mass_fighting_ritual":  {
+                                                                         "name":  "Mass Fighting Ritual",
+                                                                         "description":  "Performs a fighting ritual that benefits allied creatures."
+                                                                     },
+                                            "mass_haste":  {
+                                                               "name":  "Mass Haste",
+                                                               "description":  "May cast Mass Haste on allied creatures."
+                                                           },
+                                            "mass_protection_from_air":  {
+                                                                             "name":  "Mass Protection From Air",
+                                                                             "description":  "May cast Mass Protection from Air on allied creatures."
+                                                                         },
+                                            "mastermind_shoot":  {
+                                                                     "name":  "Mastermind Shoot",
+                                                                     "description":  "Its shot may control or confuse the target\u0027s mind."
+                                                                 },
+                                            "might_of_the_nature":  {
+                                                                        "name":  "Might of the Nature",
+                                                                        "description":  "Draws upon nature to improve its combat abilities."
+                                                                    },
+                                            "mind_blast_shoot":  {
+                                                                     "name":  "Mind Blast Shoot",
+                                                                     "description":  "Its shot releases a mental blast against the target."
+                                                                 },
+                                            "mind_spells_immunity":  {
+                                                                         "name":  "Mind Spells Immunity",
+                                                                         "description":  "Is immune to Mind Spells."
+                                                                     },
+                                            "misfortune_attack":  {
+                                                                      "name":  "Misfortune Attack",
+                                                                      "description":  "Its attack may cast Misfortune on the target."
+                                                                  },
+                                            "monstrous_rage":  {
+                                                                   "name":  "Monstrous Rage",
+                                                                   "description":  "May enter a monstrous rage and gain very powerful combat bonuses."
+                                                               },
+                                            "no_distance_penalty":  {
+                                                                        "name":  "No Distance Penalty",
+                                                                        "description":  "Deals full ranged damage at any distance."
+                                                                    },
+                                            "no_retaliation":  {
+                                                                   "name":  "No Retaliation",
+                                                                   "description":  "Enemies cannot retaliate against its normal attacks."
+                                                               },
+                                            "no_walls_penalty":  {
+                                                                     "name":  "No Walls Penalty",
+                                                                     "description":  "Deals full ranged damage through castle walls."
+                                                                 },
+                                            "paralyzing_attack":  {
+                                                                      "name":  "Paralyzing Attack",
+                                                                      "description":  "Its attack may Paralyze the target."
+                                                                  },
+                                            "paralyzing_shoot":  {
+                                                                     "name":  "Paralyzing Shoot",
+                                                                     "description":  "Its shot may Paralyze the target."
+                                                                 },
+                                            "parry":  {
+                                                          "name":  "Parry",
+                                                          "description":  "Has the stated chance to parry an attack and reduce its physical damage by half."
+                                                      },
+                                            "petrifying_attack":  {
+                                                                      "name":  "Petrifying Attack",
+                                                                      "description":  "Its attack may Petrify the target."
+                                                                  },
+                                            "piercing_attack":  {
+                                                                    "name":  "Piercing Attack",
+                                                                    "description":  "Ignores part of the target\u0027s Defense when calculating damage."
+                                                                },
+                                            "poison_and_disease_immunity":  {
+                                                                                "name":  "Poison and Disease Immunity",
+                                                                                "description":  "Is immune to Poison and Disease."
+                                                                            },
+                                            "poisonous_attack":  {
+                                                                     "name":  "Poisonous Attack",
+                                                                     "description":  "Its attack may Poison the target."
+                                                                 },
+                                            "poisonous_breath":  {
+                                                                     "name":  "Poisonous Breath",
+                                                                     "description":  "Its breath may Poison every creature it strikes."
+                                                                 },
+                                            "poisonous_shoot":  {
+                                                                    "name":  "Poisonous Shoot",
+                                                                    "description":  "Its shot may Poison the target."
+                                                                },
+                                            "polymorph_attack":  {
+                                                                     "name":  "Polymorph Attack",
+                                                                     "description":  "After dealing damage, may permanently transform the target into another creature type."
+                                                                 },
+                                            "polymorphic_shoot":  {
+                                                                      "name":  "Polymorphic Shoot",
+                                                                      "description":  "Its ranged attack may permanently transform the target into another creature type."
+                                                                  },
+                                            "polymorphic_strike":  {
+                                                                       "name":  "Polymorphic Strike",
+                                                                       "description":  "Its melee strike may permanently transform the target into another creature type."
+                                                                   },
+                                            "powerful_hex_shoot":  {
+                                                                       "name":  "Powerful Hex Shoot",
+                                                                       "description":  "Its shot may inflict a powerful hostile hex on the target."
+                                                                   },
+                                            "powerful_magical_shoot":  {
+                                                                           "name":  "Powerful Magical Shoot",
+                                                                           "description":  "Its ranged attack may cast a powerful offensive spell on the target."
+                                                                       },
+                                            "powerful_random_offensive_spellcaster":  {
+                                                                                          "name":  "Powerful Random Offensive Spellcaster",
+                                                                                          "description":  "Can cast a powerful random offensive spell during combat."
+                                                                                      },
+                                            "prayer":  {
+                                                           "name":  "Prayer",
+                                                           "description":  "May cast Prayer during combat."
+                                                       },
+                                            "preventive_retaliation":  {
+                                                                           "name":  "Preventive Retaliation",
+                                                                           "description":  "Retaliates before the enemy completes its melee attack."
+                                                                       },
+                                            "protection_of_the_archmage":  {
+                                                                               "name":  "Protection of the Archmage",
+                                                                               "description":  "May receive the Archmage\u0027s magical protection."
+                                                                           },
+                                            "protection_of_the_grandmaster":  {
+                                                                                  "name":  "Protection of the Grandmaster",
+                                                                                  "description":  "May receive the Grandmaster\u0027s magical protection."
+                                                                              },
+                                            "protection_of_the_master":  {
+                                                                             "name":  "Protection of the Master",
+                                                                             "description":  "May receive the Master\u0027s magical protection."
+                                                                         },
+                                            "pure_light_breath":  {
+                                                                      "name":  "Pure Light Breath",
+                                                                      "description":  "Its breath releases pure light through the target and affects creatures behind it."
+                                                                  },
+                                            "raise_abyssal_archdemons":  {
+                                                                             "name":  "Raise Abyssal Archdemons",
+                                                                             "description":  "Can raise Abyssal Archdemons from fallen creatures."
+                                                                         },
+                                            "raise_dark_elementals":  {
+                                                                          "name":  "Raise Dark Elementals",
+                                                                          "description":  "Can raise Dark Elementals from fallen creatures."
+                                                                      },
+                                            "raise_demon_warriors":  {
+                                                                         "name":  "Raise Demon Warriors",
+                                                                         "description":  "Can raise Demon Warriors from fallen creatures."
+                                                                     },
+                                            "raise_demons":  {
+                                                                 "name":  "Raise Demons",
+                                                                 "description":  "Can raise Demons from fallen creatures."
+                                                             },
+                                            "raise_devils":  {
+                                                                 "name":  "Raise Devils",
+                                                                 "description":  "Can raise Devils from fallen creatures."
+                                                             },
+                                            "raise_efreet":  {
+                                                                 "name":  "Raise Efreet",
+                                                                 "description":  "Can raise Efreet from fallen creatures."
+                                                             },
+                                            "raise_pit_masters_1":  {
+                                                                        "name":  "Raise Pit Masters 1",
+                                                                        "description":  "Can raise Pit Masters from fallen creatures."
+                                                                    },
+                                            "raise_treants":  {
+                                                                  "name":  "Raise Treants",
+                                                                  "description":  "Can raise Treants from fallen creatures."
+                                                              },
+                                            "random_mass_buff_every_turn":  {
+                                                                                "name":  "Random Mass Buff Every Turn",
+                                                                                "description":  "At the start of each turn, casts a random beneficial mass spell."
+                                                                            },
+                                            "random_mass_debuff_every_turn":  {
+                                                                                  "name":  "Random Mass Debuff Every Turn",
+                                                                                  "description":  "At the start of each turn, casts a random hostile mass spell."
+                                                                              },
+                                            "random_mass_spells_every_3_turns":  {
+                                                                                     "name":  "Random Mass Spells Every 3 Turns",
+                                                                                     "description":  "Every third turn, casts a random mass spell."
+                                                                                 },
+                                            "random_offensive_spellcaster":  {
+                                                                                 "name":  "Random Offensive Spellcaster",
+                                                                                 "description":  "Can cast a random offensive spell during combat."
+                                                                             },
+                                            "ranged_retaliation":  {
+                                                                       "name":  "Ranged Retaliation",
+                                                                       "description":  "Can retaliate against ranged attacks with a ranged attack of its own."
+                                                                   },
+                                            "recycling":  {
+                                                              "name":  "Recycling",
+                                                              "description":  "Reuses remains or summoned matter to restore resources or creatures."
+                                                          },
+                                            "repair_construct_1":  {
+                                                                       "name":  "Repair Construct 1",
+                                                                       "description":  "Can repair allied Constructs, restoring lost hit points and creatures."
+                                                                   },
+                                            "rest_in_peace":  {
+                                                                  "name":  "Rest in Peace",
+                                                                  "description":  "Creatures slain by this stack cannot be resurrected or raised."
+                                                              },
+                                            "resurrection":  {
+                                                                 "name":  "Resurrection",
+                                                                 "description":  "May restore fallen living creatures to its stack."
+                                                             },
+                                            "revenge":  {
+                                                            "name":  "Revenge",
+                                                            "description":  "Deals increased damage as its own stack becomes wounded."
+                                                        },
+                                            "sea_hex_shoot":  {
+                                                                  "name":  "Sea Hex Shoot",
+                                                                  "description":  "Its shot may inflict a hostile sea hex on the target."
+                                                              },
+                                            "shattering_spree":  {
+                                                                     "name":  "Shattering Spree",
+                                                                     "description":  "After its first eligible kill each turn, immediately gains another action."
+                                                                 },
+                                            "shield":  {
+                                                           "name":  "Shield",
+                                                           "description":  "May cast Shield during combat."
+                                                       },
+                                            "shield_block":  {
+                                                                 "name":  "Shield Block",
+                                                                 "description":  "Has the stated chance to block all physical damage from an attack."
+                                                             },
+                                            "shield_of_the_empire":  {
+                                                                         "name":  "Shield of the Empire",
+                                                                         "description":  "May receive Shield of the Empire, reducing incoming damage."
+                                                                     },
+                                            "slain_creatures_become_dark_elementals":  {
+                                                                                           "name":  "Slain Creatures become Dark Elementals",
+                                                                                           "description":  "Transforms creatures slain by this stack as stated by the ability."
+                                                                                       },
+                                            "slayer":  {
+                                                           "name":  "Slayer",
+                                                           "description":  "May cast Slayer during combat."
+                                                       },
+                                            "slow_immunity":  {
+                                                                  "name":  "Slow Immunity",
+                                                                  "description":  "Is immune to Slow."
+                                                              },
+                                            "slow_shoot":  {
+                                                               "name":  "Slow Shoot",
+                                                               "description":  "Its shot may cast Slow on the target."
+                                                           },
+                                            "sorceress_shoot":  {
+                                                                    "name":  "Sorceress Shoot",
+                                                                    "description":  "Its shot may inflict one of the Sorceress\u0027s hostile spells."
+                                                                },
+                                            "sorrow_attack":  {
+                                                                  "name":  "Sorrow Attack",
+                                                                  "description":  "Its attack may cast Sorrow on the target."
+                                                              },
+                                            "spell_damage_reduction":  {
+                                                                           "name":  "Spell Damage Reduction",
+                                                                           "description":  "Reduces damage received from hostile spells."
+                                                                       },
+                                            "spells_affinity":  {
+                                                                    "name":  "Spells Affinity",
+                                                                    "description":  "Has an affinity with Spells magic and its related spells."
+                                                                },
+                                            "spells_immunity":  {
+                                                                    "name":  "Spells Immunity",
+                                                                    "description":  "Is immune to Spells."
+                                                                },
+                                            "steal_artifact_attack":  {
+                                                                          "name":  "Steal Artifact Attack",
+                                                                          "description":  "Its attack may steal an artifact from the opposing hero."
+                                                                      },
+                                            "steal_money_and_artifact_attack":  {
+                                                                                    "name":  "Steal Money and Artifact Attack",
+                                                                                    "description":  "Its attack may steal gold and an artifact from the opposing hero."
+                                                                                },
+                                            "steal_money_attack":  {
+                                                                       "name":  "Steal Money Attack",
+                                                                       "description":  "Its attack may steal gold from the opposing hero."
+                                                                   },
+                                            "strike_and_return":  {
+                                                                      "name":  "Strike and Return",
+                                                                      "description":  "Returns to its starting hex after completing a melee attack."
+                                                                  },
+                                            "strong_diabolic_fury":  {
+                                                                         "name":  "Strong Diabolic Fury",
+                                                                         "description":  "May enter a powerful diabolic fury and gain major combat bonuses."
+                                                                     },
+                                            "strongly_hates_angels":  {
+                                                                          "name":  "Strongly Hates Angels",
+                                                                          "description":  "Deals greatly increased damage to Angels."
+                                                                      },
+                                            "strongly_hates_black_dragons":  {
+                                                                                 "name":  "Strongly Hates Black Dragons",
+                                                                                 "description":  "Deals greatly increased damage to Black Dragons."
+                                                                             },
+                                            "strongly_hates_devils":  {
+                                                                          "name":  "Strongly Hates Devils",
+                                                                          "description":  "Deals greatly increased damage to Devils."
+                                                                      },
+                                            "strongly_hates_efreeti":  {
+                                                                           "name":  "Strongly Hates Efreeti",
+                                                                           "description":  "Deals greatly increased damage to Efreeti."
+                                                                       },
+                                            "strongly_hates_genies":  {
+                                                                          "name":  "Strongly Hates Genies",
+                                                                          "description":  "Deals greatly increased damage to Genies."
+                                                                      },
+                                            "strongly_hates_titans":  {
+                                                                          "name":  "Strongly Hates Titans",
+                                                                          "description":  "Deals greatly increased damage to Titans."
+                                                                      },
+                                            "stunning_attack":  {
+                                                                    "name":  "Stunning Attack",
+                                                                    "description":  "Its attack may Stun the target, making it lose its action and retaliations."
+                                                                },
+                                            "stunning_strike":  {
+                                                                    "name":  "Stunning Strike",
+                                                                    "description":  "Its strike may Stun the target, making it lose its action and retaliations."
+                                                                },
+                                            "summon_fire_elementals":  {
+                                                                           "name":  "Summon Fire Elementals",
+                                                                           "description":  "May summon Fire Elementals onto the battlefield."
+                                                                       },
+                                            "supreme_magical_shoot":  {
+                                                                          "name":  "Supreme Magical Shoot",
+                                                                          "description":  "Its ranged attack may cast a supreme offensive spell on the target."
+                                                                      },
+                                            "thirst_for_blood":  {
+                                                                     "name":  "Thirst for Blood",
+                                                                     "description":  "May enter a bloodthirsty state and gain offensive combat bonuses."
+                                                                 },
+                                            "two_retaliations":  {
+                                                                     "name":  "Two Retaliations",
+                                                                     "description":  "Can retaliate twice during each combat round."
+                                                                 },
+                                            "undead_nemesis":  {
+                                                                   "name":  "Undead Nemesis",
+                                                                   "description":  "After its first eligible kill of an Undead enemy each turn, immediately gains another action."
+                                                               },
+                                            "underworld_of_magic":  {
+                                                                        "name":  "Underworld of Magic",
+                                                                        "description":  "Draws random magic from the underworld during combat."
+                                                                    },
+                                            "unlimited_retaliations":  {
+                                                                           "name":  "Unlimited Retaliations",
+                                                                           "description":  "Can retaliate an unlimited number of times each combat round."
+                                                                       },
+                                            "wall_of_shields_formation":  {
+                                                                              "name":  "Wall of Shields Formation",
+                                                                              "description":  "Can form a wall of shields, trading offensive strength for greatly increased Defense."
+                                                                          },
+                                            "water_affinity":  {
+                                                                   "name":  "Water Affinity",
+                                                                   "description":  "Has an affinity with Water magic and its related spells."
+                                                               },
+                                            "weak_drain_life":  {
+                                                                    "name":  "Weak Drain Life",
+                                                                    "description":  "Restores a reduced amount of lost hit points according to damage dealt to living enemies."
+                                                                },
+                                            "weakness_attack":  {
+                                                                    "name":  "Weakness Attack",
+                                                                    "description":  "Its attack may cast Weakness on the target."
+                                                                },
+                                            "wild_lightning_attack":  {
+                                                                          "name":  "Wild Lightning Attack",
+                                                                          "description":  "Its attack may release unpredictable lightning against the target."
+                                                                      },
+                                            "wild_spells_attack":  {
+                                                                       "name":  "Wild Spells Attack",
+                                                                       "description":  "Its attack may trigger one of several unpredictable spells."
+                                                                   },
+                                            "will_spells_immunity":  {
+                                                                         "name":  "Will Spells Immunity",
+                                                                         "description":  "Is immune to spells that control or alter a creature\u0027s will."
+                                                                     },
+                                            "world_of_magic":  {
+                                                                   "name":  "World of Magic",
+                                                                   "description":  "Draws a random spell from the wider world of magic during combat."
+                                                               },
+                                            "wrath_of_vengeance":  {
+                                                                       "name":  "Wrath of Vengeance",
+                                                                       "description":  "May enter a vengeful wrath and gain defensive and offensive combat bonuses."
+                                                                   }
+                                        }
+                         }
+}
